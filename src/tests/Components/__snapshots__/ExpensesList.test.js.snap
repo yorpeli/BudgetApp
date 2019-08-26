@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Expense list with Expenses 1`] = `
+<div>
+  <[object Object]
+    amount={7800}
+    createdOn={-345600000}
+    description="Test Bill"
+    id="0"
+    key="0"
+    note="test desc"
+  />
+  <[object Object]
+    amount={123}
+    createdOn={0}
+    description="Test Bill2"
+    id="1"
+    key="1"
+    note="test desc"
+  />
+  <[object Object]
+    amount={456}
+    createdOn={432000000}
+    description="Test credit"
+    id="2"
+    key="2"
+    note="test desc"
+  />
+</div>
+`;
+
+exports[`Should render EMPTY string 1`] = `
+<div>
+  <p>
+    Nothing to see here
+  </p>
+</div>
+`;

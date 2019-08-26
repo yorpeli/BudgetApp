@@ -5,14 +5,17 @@ import SelectExpenses from '../Selectors/expenses';
 
 
 
-const ExpensesList = (props) => (
+export const ExpensesList = (props) => (
     <div>
-        <h3>ExpensesList</h3>
-        <p>{props.expenses.length}</p>
         {
-            props.expenses.map((expense) => {
-                return <ExpenseListItem key={expense.id} {...expense}/>
-            })}
+            props.expenses.length ===0?(
+                <p>Nothing to see here</p>
+            ):(
+                props.expenses.map((expense) => {
+                    return <ExpenseListItem key={expense.id} {...expense}/>
+                })
+            )
+        }
     </div>
 );
 

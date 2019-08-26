@@ -6,7 +6,7 @@ import numeral from 'numeral';
 
 
 
-const ExpenseListItem = ({id,description, amount, createdOn}) => (
+export const ExpenseListItem = ({id,description, amount, createdOn}) => (
     <div>
         <Link to={`/edit/${id}`}>
         <h3>{description}</h3>
